@@ -1,0 +1,72 @@
+@import "./colorTemplate.css";
+@import "./billingSwitch.css";
+@import "./sliderComponent.css";
+@import "./sliderTrack.css";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+body,
+html {
+  background: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+  font-family: "Manrope";
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  background: url("../images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 90px;
+  margin: 50px auto 35px auto;
+  padding: 30px;
+  text-align: center;
+}
+
+.title h1,
+h5 {
+  margin: 0px;
+}
+
+.title h1 {
+  color: var(--darkDesaturatedBlue);
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.title h5 {
+  color: var(--grayishBlue);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+@media (min-width: 650px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+  .title div {
+    display: flex;
+    justify-content: center;
+  }
+  .title div h5 {
+    font-size: 1rem;
+    margin-left: 4px;
+  }
+}
+
+hr {
+  width: 100%;
+  background: var(--lightGrayishToggleBG);
+  border: 0;
+  height: 1px;
+  margin-top: 30px;
+}

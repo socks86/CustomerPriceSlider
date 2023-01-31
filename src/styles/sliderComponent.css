@@ -1,0 +1,193 @@
+.slider-component {
+  background: var(--white);
+  width: 50%;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 5px 10px rgba(167, 167, 167, 0.712);
+  margin-bottom: 200px;
+}
+
+.slider-and-switch {
+  width: 100%;
+}
+
+.plan {
+  color: var(--grayishBlue);
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-right: 20px;
+  display: flex;
+}
+
+.plan span {
+  margin-left: 5px;
+}
+
+.price,
+.price-mobile {
+  color: var(--darkDesaturatedBlue);
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.month {
+  color: var(--grayishBlue);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.package-and-price {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.monthly,
+.yearly,
+.percentage {
+  color: var(--grayishBlue);
+}
+
+.yearly {
+  margin-right: 20px;
+}
+
+.percentage {
+  background: var(--lightGrayishRed);
+  border-radius: 25px;
+  color: var(--lightRed);
+  padding: 5px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  position: absolute;
+}
+
+.details {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.left span {
+  margin: 5px;
+}
+
+.left span img {
+  margin-right: 10px;
+}
+
+.right button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: none;
+  background: var(--darkDesaturatedBlue);
+  color: var(--white);
+  font-size: 0.7rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: hsl(227, 27%, 40%);
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .price {
+    display: none;
+  }
+  .plan {
+    font-size: 1.2rem;
+  }
+  .mobile-slider-price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 190px;
+    margin-bottom: 25px;
+  }
+  .package-and-price,
+  .range,
+  .price-mobile {
+    margin: 10px;
+  }
+}
+
+@media (min-width: 550px) {
+  .price-component {
+    padding-top: 0;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 400px;
+    box-shadow: 1px 30px 50px rgba(167, 167, 167, 0.349);
+  }
+  
+  .price-mobile {
+    display: none;
+  }
+  
+  .slider-and-switch {
+    display: flex;
+    padding-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  
+  .range {
+    margin-bottom: 25px;
+  }
+
+  .details {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .left {
+    text-align: start;
+  }
+}
+
+@media (max-width: 380px) {
+  .monthly,
+  .yearly {
+    font-size: 0.8rem;
+  }
+  
+  .percentage {
+    font-size: 0.7rem;
+  }
+}
+
