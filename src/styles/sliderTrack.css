@@ -5,6 +5,7 @@
     -webkit-appearance: none;
     width: 80%;
     background: transparent;
+    background-color: var(--lightGrayishBlueEmptySideBar)
   }
 
   input[type="range"]::-webkit-slider-thumb {
@@ -39,11 +40,12 @@
 
   input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
-    height: 8.4px;
-    cursor: pointer;
-    background: var(--lightGrayishBlueEmptySideBar);
-    border-radius: 70px;
-    }
+  height: 8.4px;
+  cursor: pointer;
+  /*play with background-color to indicate progress bar*/
+  border-radius: 70px;
+  -webkit-appearance: none;
+  }
 }
 
 
